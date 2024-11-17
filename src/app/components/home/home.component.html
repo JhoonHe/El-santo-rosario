@@ -1,1 +1,23 @@
-<p>p{{day}}</p>
+<span [ngSwitch]="day">
+    <div *ngSwitchCase=1>
+        <app-monday></app-monday>
+    </div>
+    <div *ngSwitchCase=2>
+        <app-tuesday></app-tuesday>
+    </div>
+    <div *ngSwitchCase=3>
+        <app-wednesday></app-wednesday>
+    </div>
+    <div *ngSwitchCase=4>
+        <app-thursday></app-thursday>
+    </div>
+    <div *ngSwitchCase=5>
+        <app-friday></app-friday>
+    </div>
+    <div *ngSwitchCase=6>
+        <app-saturday></app-saturday>
+    </div>
+    <div *ngSwitchCase=0>
+        <app-sunday></app-sunday>
+    </div>
+</span>
